@@ -1,0 +1,1581 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      CMakeCCompilerId.c:455:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        455 | char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:825:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        825 | char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:826:25: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        826 | char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+            |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:857:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        857 |   "INFO" ":" "standard_default[" C_VERSION "]";
+            |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:859:48: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        859 | const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+            |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        860 | #if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \\
+            | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        861 |      defined(__TI_COMPILER_VERSION__)) &&                                     \\
+            |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        862 |   !defined(__STRICT_ANSI__)
+            |   ~~~~~~~~~~~~~~~~~~~~~~~~~                     
+        863 |   "ON"
+            |   ~~~~                                          
+        864 | #else
+            | ~~~~~                                           
+        865 |   "OFF"
+            |   ~~~~~                                         
+        866 | #endif
+            | ~~~~~~                                          
+        867 | "]";
+            | ~~~                                             
+      CMakeCCompilerId.c:875:5: error: cannot declare '::main' to be a global variable
+        875 | int main(argc, argv) int argc; char *argv[];
+            |     ^~~~
+      CMakeCCompilerId.c:875:10: error: 'argc' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |          ^~~~
+      CMakeCCompilerId.c:875:16: error: 'argv' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                ^~~~
+      CMakeCCompilerId.c:875:20: error: expression list treated as compound expression in initializer [-fpermissive]
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                    ^
+      CMakeCCompilerId.c:875:38: error: storage size of 'argv' isn't known
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                                      ^~~~
+      CMakeCCompilerId.c:879:1: error: expected unqualified-id before '{' token
+        879 | {
+            | ^
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      g++.exe: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+      g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      CMakeCCompilerId.c:455:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        455 | char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:825:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        825 | char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:826:25: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        826 | char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+            |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:857:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        857 |   "INFO" ":" "standard_default[" C_VERSION "]";
+            |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:859:48: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        859 | const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+            |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        860 | #if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \\
+            | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        861 |      defined(__TI_COMPILER_VERSION__)) &&                                     \\
+            |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        862 |   !defined(__STRICT_ANSI__)
+            |   ~~~~~~~~~~~~~~~~~~~~~~~~~                     
+        863 |   "ON"
+            |   ~~~~                                          
+        864 | #else
+            | ~~~~~                                           
+        865 |   "OFF"
+            |   ~~~~~                                         
+        866 | #endif
+            | ~~~~~~                                          
+        867 | "]";
+            | ~~~                                             
+      CMakeCCompilerId.c:875:5: error: cannot declare '::main' to be a global variable
+        875 | int main(argc, argv) int argc; char *argv[];
+            |     ^~~~
+      CMakeCCompilerId.c:875:10: error: 'argc' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |          ^~~~
+      CMakeCCompilerId.c:875:16: error: 'argv' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                ^~~~
+      CMakeCCompilerId.c:875:20: error: expression list treated as compound expression in initializer [-fpermissive]
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                    ^
+      CMakeCCompilerId.c:875:38: error: storage size of 'argv' isn't known
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                                      ^~~~
+      CMakeCCompilerId.c:879:1: error: expected unqualified-id before '{' token
+        879 | {
+            | ^
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      g++.exe: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+      g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/3.31.5/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-csj4iu"
+      binary: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-csj4iu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-csj4iu'
+        
+        Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_d9b4f
+        [1/2] C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_d9b4f.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_d9b4f.dir/CMakeCCompilerABI.c.obj 
+        C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_d9b4f.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c:2:4: error: #error "A C++ compiler has been selected for C."
+            2 | #  error "A C++ compiler has been selected for C."
+              |    ^~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/msys64/mingw64/bin/g++.exe"
+    directories:
+      source: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-ef96fw"
+      binary: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-ef96fw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-ef96fw'
+        
+        Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_17bb4
+        [1/2] C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_17bb4.dir\\testCCompiler.c.obj -c D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ef96fw\\testCCompiler.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_17bb4.dir/testCCompiler.c.obj 
+        C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_17bb4.dir\\testCCompiler.c.obj -c D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ef96fw\\testCCompiler.c
+        D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ef96fw\\testCCompiler.c:2:3: error: #error "The CMAKE_C_COMPILER is set to a C++ compiler"
+            2 | # error "The CMAKE_C_COMPILER is set to a C++ compiler"
+              |   ^~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      CMakeCCompilerId.c:455:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        455 | char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:825:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        825 | char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:826:25: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        826 | char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+            |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:857:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        857 |   "INFO" ":" "standard_default[" C_VERSION "]";
+            |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:859:48: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        859 | const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+            |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        860 | #if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \\
+            | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        861 |      defined(__TI_COMPILER_VERSION__)) &&                                     \\
+            |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        862 |   !defined(__STRICT_ANSI__)
+            |   ~~~~~~~~~~~~~~~~~~~~~~~~~                     
+        863 |   "ON"
+            |   ~~~~                                          
+        864 | #else
+            | ~~~~~                                           
+        865 |   "OFF"
+            |   ~~~~~                                         
+        866 | #endif
+            | ~~~~~~                                          
+        867 | "]";
+            | ~~~                                             
+      CMakeCCompilerId.c:875:5: error: cannot declare '::main' to be a global variable
+        875 | int main(argc, argv) int argc; char *argv[];
+            |     ^~~~
+      CMakeCCompilerId.c:875:10: error: 'argc' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |          ^~~~
+      CMakeCCompilerId.c:875:16: error: 'argv' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                ^~~~
+      CMakeCCompilerId.c:875:20: error: expression list treated as compound expression in initializer [-fpermissive]
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                    ^
+      CMakeCCompilerId.c:875:38: error: storage size of 'argv' isn't known
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                                      ^~~~
+      CMakeCCompilerId.c:879:1: error: expected unqualified-id before '{' token
+        879 | {
+            | ^
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      g++.exe: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+      g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      CMakeCCompilerId.c:455:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        455 | char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:825:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        825 | char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:826:25: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        826 | char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+            |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:857:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        857 |   "INFO" ":" "standard_default[" C_VERSION "]";
+            |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:859:48: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        859 | const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+            |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        860 | #if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \\
+            | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        861 |      defined(__TI_COMPILER_VERSION__)) &&                                     \\
+            |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        862 |   !defined(__STRICT_ANSI__)
+            |   ~~~~~~~~~~~~~~~~~~~~~~~~~                     
+        863 |   "ON"
+            |   ~~~~                                          
+        864 | #else
+            | ~~~~~                                           
+        865 |   "OFF"
+            |   ~~~~~                                         
+        866 | #endif
+            | ~~~~~~                                          
+        867 | "]";
+            | ~~~                                             
+      CMakeCCompilerId.c:875:5: error: cannot declare '::main' to be a global variable
+        875 | int main(argc, argv) int argc; char *argv[];
+            |     ^~~~
+      CMakeCCompilerId.c:875:10: error: 'argc' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |          ^~~~
+      CMakeCCompilerId.c:875:16: error: 'argv' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                ^~~~
+      CMakeCCompilerId.c:875:20: error: expression list treated as compound expression in initializer [-fpermissive]
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                    ^
+      CMakeCCompilerId.c:875:38: error: storage size of 'argv' isn't known
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                                      ^~~~
+      CMakeCCompilerId.c:879:1: error: expected unqualified-id before '{' token
+        879 | {
+            | ^
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      g++.exe: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+      g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/3.31.5/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-sjv8z1"
+      binary: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-sjv8z1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-sjv8z1'
+        
+        Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_9a3e2
+        [1/2] C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_9a3e2.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_9a3e2.dir/CMakeCCompilerABI.c.obj 
+        C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_9a3e2.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c:2:4: error: #error "A C++ compiler has been selected for C."
+            2 | #  error "A C++ compiler has been selected for C."
+              |    ^~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/msys64/mingw64/bin/g++.exe"
+    directories:
+      source: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-07jh4q"
+      binary: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-07jh4q"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-07jh4q'
+        
+        Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_1bb79
+        [1/2] C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_1bb79.dir\\testCCompiler.c.obj -c D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-07jh4q\\testCCompiler.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_1bb79.dir/testCCompiler.c.obj 
+        C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_1bb79.dir\\testCCompiler.c.obj -c D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-07jh4q\\testCCompiler.c
+        D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-07jh4q\\testCCompiler.c:2:3: error: #error "The CMAKE_C_COMPILER is set to a C++ compiler"
+            2 | # error "The CMAKE_C_COMPILER is set to a C++ compiler"
+              |   ^~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      CMakeCCompilerId.c:455:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        455 | char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:825:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        825 | char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:826:25: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        826 | char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+            |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:857:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        857 |   "INFO" ":" "standard_default[" C_VERSION "]";
+            |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:859:48: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        859 | const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+            |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        860 | #if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \\
+            | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        861 |      defined(__TI_COMPILER_VERSION__)) &&                                     \\
+            |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        862 |   !defined(__STRICT_ANSI__)
+            |   ~~~~~~~~~~~~~~~~~~~~~~~~~                     
+        863 |   "ON"
+            |   ~~~~                                          
+        864 | #else
+            | ~~~~~                                           
+        865 |   "OFF"
+            |   ~~~~~                                         
+        866 | #endif
+            | ~~~~~~                                          
+        867 | "]";
+            | ~~~                                             
+      CMakeCCompilerId.c:875:5: error: cannot declare '::main' to be a global variable
+        875 | int main(argc, argv) int argc; char *argv[];
+            |     ^~~~
+      CMakeCCompilerId.c:875:10: error: 'argc' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |          ^~~~
+      CMakeCCompilerId.c:875:16: error: 'argv' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                ^~~~
+      CMakeCCompilerId.c:875:20: error: expression list treated as compound expression in initializer [-fpermissive]
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                    ^
+      CMakeCCompilerId.c:875:38: error: storage size of 'argv' isn't known
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                                      ^~~~
+      CMakeCCompilerId.c:879:1: error: expected unqualified-id before '{' token
+        879 | {
+            | ^
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      g++.exe: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+      g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      CMakeCCompilerId.c:455:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        455 | char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:825:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        825 | char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:826:25: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        826 | char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+            |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:857:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        857 |   "INFO" ":" "standard_default[" C_VERSION "]";
+            |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:859:48: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        859 | const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+            |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        860 | #if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \\
+            | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        861 |      defined(__TI_COMPILER_VERSION__)) &&                                     \\
+            |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        862 |   !defined(__STRICT_ANSI__)
+            |   ~~~~~~~~~~~~~~~~~~~~~~~~~                     
+        863 |   "ON"
+            |   ~~~~                                          
+        864 | #else
+            | ~~~~~                                           
+        865 |   "OFF"
+            |   ~~~~~                                         
+        866 | #endif
+            | ~~~~~~                                          
+        867 | "]";
+            | ~~~                                             
+      CMakeCCompilerId.c:875:5: error: cannot declare '::main' to be a global variable
+        875 | int main(argc, argv) int argc; char *argv[];
+            |     ^~~~
+      CMakeCCompilerId.c:875:10: error: 'argc' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |          ^~~~
+      CMakeCCompilerId.c:875:16: error: 'argv' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                ^~~~
+      CMakeCCompilerId.c:875:20: error: expression list treated as compound expression in initializer [-fpermissive]
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                    ^
+      CMakeCCompilerId.c:875:38: error: storage size of 'argv' isn't known
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                                      ^~~~
+      CMakeCCompilerId.c:879:1: error: expected unqualified-id before '{' token
+        879 | {
+            | ^
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      g++.exe: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+      g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/3.31.5/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-jvq17r"
+      binary: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-jvq17r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-jvq17r'
+        
+        Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_ffdac
+        [1/2] C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_ffdac.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_ffdac.dir/CMakeCCompilerABI.c.obj 
+        C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_ffdac.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c:2:4: error: #error "A C++ compiler has been selected for C."
+            2 | #  error "A C++ compiler has been selected for C."
+              |    ^~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/msys64/mingw64/bin/g++.exe"
+    directories:
+      source: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-0tyv86"
+      binary: "D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-0tyv86"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub/qt-programming-2025/build/CMake_g_gdb-Debug/CMakeFiles/CMakeScratch/TryCompile-0tyv86'
+        
+        Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_cc8d2
+        [1/2] C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_cc8d2.dir\\testCCompiler.c.obj -c D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0tyv86\\testCCompiler.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_cc8d2.dir/testCCompiler.c.obj 
+        C:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles\\cmTC_cc8d2.dir\\testCCompiler.c.obj -c D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0tyv86\\testCCompiler.c
+        D:\\GitHub\\qt-programming-2025\\build\\CMake_g_gdb-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0tyv86\\testCCompiler.c:2:3: error: #error "The CMAKE_C_COMPILER is set to a C++ compiler"
+            2 | # error "The CMAKE_C_COMPILER is set to a C++ compiler"
+              |   ^~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      CMakeCCompilerId.c:455:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        455 | char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:825:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        825 | char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+            |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:826:25: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        826 | char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+            |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:857:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        857 |   "INFO" ":" "standard_default[" C_VERSION "]";
+            |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      CMakeCCompilerId.c:859:48: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        859 | const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+            |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        860 | #if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \\
+            | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        861 |      defined(__TI_COMPILER_VERSION__)) &&                                     \\
+            |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        862 |   !defined(__STRICT_ANSI__)
+            |   ~~~~~~~~~~~~~~~~~~~~~~~~~                     
+        863 |   "ON"
+            |   ~~~~                                          
+        864 | #else
+            | ~~~~~                                           
+        865 |   "OFF"
+            |   ~~~~~                                         
+        866 | #endif
+            | ~~~~~~                                          
+        867 | "]";
+            | ~~~                                             
+      CMakeCCompilerId.c:875:5: error: cannot declare '::main' to be a global variable
+        875 | int main(argc, argv) int argc; char *argv[];
+            |     ^~~~
+      CMakeCCompilerId.c:875:10: error: 'argc' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |          ^~~~
+      CMakeCCompilerId.c:875:16: error: 'argv' was not declared in this scope
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                ^~~~
+      CMakeCCompilerId.c:875:20: error: expression list treated as compound expression in initializer [-fpermissive]
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                    ^
+      CMakeCCompilerId.c:875:38: error: storage size of 'argv' isn't known
+        875 | int main(argc, argv) int argc; char *argv[];
+            |                                      ^~~~
+      CMakeCCompilerId.c:879:1: error: expected unqualified-id before '{' token
+        879 | {
+            | ^
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      g++.exe: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+      g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      CMakeCCompilerId.c:2:3: error: #error "A C++ compiler has been selected for C."
+          2 | # error "A C++ compiler has been selected for C."
+            |   ^~~~~
+      
+      

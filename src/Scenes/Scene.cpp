@@ -21,6 +21,7 @@ void Scene::update() {
     processInput();
     processMovement();
     processPicking();
+    advance(); // Drive all QGraphicsItem animations (e.g., projectile bodies)
 }
 
 void Scene::startLoop() {
@@ -38,4 +39,3 @@ void Scene::processMovement() {
 void Scene::processPicking() {
 
 }
-

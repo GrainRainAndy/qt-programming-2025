@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.28)
 project(qt_programming_2024)
+set(CMAKE_PREFIX_PATH "D:/QT/6.5.9/mingw_64/lib/cmake")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
@@ -46,10 +47,37 @@ add_executable(qt_programming_2024 src/main.cpp
         src/Items/Mountable.cpp
         src/Items/Mountable.h
         src/Items/Armors/FlamebreakerArmor.cpp
-        src/Items/Armors/FlamebreakerArmor.h)
+        src/Items/Armors/FlamebreakerArmor.h
+        src/ui/StartMenu.cpp
+        src/ui/StartMenu.h
+        src/ui/ChoosePlayers1Widget.cpp
+        src/ui/ChoosePlayers1Widget.h
+        src/ui/ChoosePlayers2Widget.cpp
+        src/ui/ChoosePlayers2Widget.h
+        src/utils/PreInfo.h
+        src/ui/ChooseMapWidget.h
+        src/ui/ChooseMapWidget.cpp
+        src/Items/Maps/MushroomGardenMap.cpp
+        src/Items/Maps/MushroomGardenMap.h
+        src/Items/Characters/PeaShooterSingle.cpp
+        src/Items/Characters/PeaShooterSingle.h
+        src/Items/Characters/SnowPeaSingle.cpp
+        src/Items/Characters/SnowPeaSingle.h
+        src/Items/Weapons/Weapon.h
+        src/Items/Weapons/Weapon.cpp
+        src/Items/Weapons/Pea.h
+        src/Items/Weapons/Pea.cpp
+        src/Items/Weapons/SnowPea.h
+        src/Items/Weapons/SnowPea.cpp
+        src/Items/Characters/ChomperSingle.cpp
+        src/Items/Characters/ChomperSingle.h
+        src/Items/Weapons/Cabbage.cpp
+        src/Items/Weapons/Cabbage.h
+        src/Items/Characters/CabbagepultSingle.cpp
+        src/Items/Characters/CabbagepultSingle.h
+)
 target_link_libraries(qt_programming_2024
         Qt::Core
         Qt::Gui
         Qt::Widgets
 )
-

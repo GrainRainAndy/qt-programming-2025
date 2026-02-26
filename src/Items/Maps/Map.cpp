@@ -3,6 +3,7 @@
 //
 
 #include "Map.h"
+#include <stdexcept>
 
 Map::Map(QGraphicsItem *parent, const QString &pixmapPath) : Item(parent, pixmapPath) {}
 
@@ -35,4 +36,21 @@ QPointF Map::getSpawnPos() {
 qreal Map::getFloorHeight() {
     auto sceneRect = sceneBoundingRect();
     return sceneRect.top() + (sceneRect.top() - sceneRect.bottom()) * 0.5;
+}
+
+Map *Map::createMap(MapType type, QGraphicsItem *parent) {
+    auto it = factory().find(type);
+    if (it != factory().end()) {
+        return it->second(parent);
+    }
+    throw std::runtime_error("MapType not registered");
+}
+
+void Map::registerMap(MapType type, std::function<Map*(QGraphicsItem*)> creator) {
+    factory()[type] = creator;
+}
+
+std::unordered_map<MapType, std::function<Map*(QGraphicsItem*)>> &Map::factory() {
+    static std::unordered_map<MapType, std::function<Map*(QGraphicsItem*)>> instance;
+    return instance;
 }
